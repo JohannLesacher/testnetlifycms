@@ -68,8 +68,9 @@ collections:
                 ],
             }
   - name: pages_simples
-    label: Pages Simples
+    label: "Pages Simples"
     folder: src/pages/simples
+    identifier_field: url
     create: true
     fields:
       - { label: "Url", name: "url", widget: "string" }
