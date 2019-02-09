@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://clever-bhabha-1ce0d3.netlify.com/* http://gatsbydemo.cerealconcept.com/:splat 301!
