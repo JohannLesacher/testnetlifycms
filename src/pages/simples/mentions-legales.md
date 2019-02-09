@@ -2,6 +2,62 @@
 url: mentions-legales
 titre: Mentions Légales
 date: 2019-02-09T09:19:17.020Z
-contenu: "# Editeur :\r\n\nLe site cerealconcept.com est édité par Johann Lesacher et Adrien Pierrin\r\n\nPrésidents & Directeurs de la publication: Johann Lesacher et Adrien Pierrin\r\n\nWebmaster : Johann Lesacher et Adrien Pierrin\r\n\n## \rSiège social\r\n\n**Johann Lesacher**\r\n\n46 boulevard des Minimes, 31200 Toulouse, France\r\n\nSIRET: 753 503 085 00049\r\n\n**Adrien Pierrin**\r\n\n15 rue des Pâquerettes, 31500 Toulouse, France\r\n\nSIRET: 788 957 405 00038\r\n\n# Hébergement :\r\n\nNetlify\r\n\n610 22nd Street\r\n\nSuite 315\r\n\nSan Francisco, CA 94107\r\n\nEtats-Unis d'Amérique\r\n\n# Créateur du site :\r\n\nCereal Concept - Johann Lesacher et Adrien Pierrin"
+contenu: >-
+  # Editeur :
+
+
+  Le site cerealconcept.com est édité par Johann Lesacher et Adrien Pierrin
+
+
+  Présidents & Directeurs de la publication: Johann Lesacher et Adrien Pierrin
+
+
+  Webmaster : Johann Lesacher et Adrien Pierrin
+
+
+  ## Siège social
+
+
+  **Johann Lesacher**
+
+
+  46 boulevard des Minimes, 31200 Toulouse, France
+
+
+  SIRET: 753 503 085 00049
+
+
+  **Adrien Pierrin**
+
+
+  15 rue des Pâquerettes, 31500 Toulouse, France
+
+
+  SIRET: 788 957 405 00038
+
+
+  # Hébergement :
+
+
+  [Netlify](https://netlify.com)
+
+
+  610 22nd Street
+
+
+  Suite 315
+
+
+  San Francisco, CA 94107
+
+
+  Etats-Unis d'Amérique
+
+
+  # Créateur du site :
+
+
+  [Cereal Concept](https://cerealconcept.com/) - Johann Lesacher et Adrien
+  Pierrin
 ---
 
