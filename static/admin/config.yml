@@ -2,8 +2,8 @@ backend:
   name: github
   repo: JohannLesacher/testnetlifycms
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: img
 
 collections:
   - name: blog
@@ -12,6 +12,67 @@ collections:
     create: true
     fields:
       - { name: path, label: Url }
-      - { name: date, label: Date, widget: date, format: DD/MM/YYYY }
+      - { name: date, label: Date, widget: date, format: DD/MM/YYYY, dateFormat: true }
       - { name: title, label: Titre }
       - { name: body, label: Texte, widget: markdown }
+  - name: pages
+    label: Pages
+    files:
+      - label: Accueil
+        name: accueil
+        file: "src/pages/accueil/accueil.md"
+        fields: 
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Main Image",
+              name: "mainImage",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Image Gallery",
+              name: "gallery",
+              widget: "list",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - { label: "Developer Groups", name: "developerGroups", widget: "markdown" }
+          - {
+              label: "Meetup Organizers",
+              name: "organizers",
+              widget: "object",
+              fields:
+                [
+                  { label: "Title", name: "title", widget: "string" },
+                  {
+                    label: "Images",
+                    name: "gallery",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Name", name: "name", widget: "string" },
+                        { label: "Image", name: "image", widget: "image" },
+                        { label: "Image Description", name: "imageAlt", widget: "string" },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
