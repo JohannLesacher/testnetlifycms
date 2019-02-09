@@ -13,45 +13,95 @@ collections:
         name: accueil
         file: "src/pages/accueil/accueil.md"
         fields: 
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titre", name: "titre", widget: "string" }
           - {
-              label: "Main Image",
-              name: "mainImage",
+              label: "Landing",
+              name: "landing",
               widget: "object",
               fields:
                 [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Image Description", name: "imageAlt", widget: "string" },
-                ],
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - {
-              label: "Image Gallery",
-              name: "gallery",
-              widget: "list",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Image Description", name: "imageAlt", widget: "string" },
-                ],
-            }
-          - { label: "Developer Groups", name: "developerGroups", widget: "markdown" }
-          - {
-              label: "Meetup Organizers",
-              name: "organizers",
-              widget: "object",
-              fields:
-                [
-                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Titre", name: "landingTitre", widget: "text" },
+                  { label: "Image", name: "landingImage", widget: "image" },
                   {
-                    label: "Images",
-                    name: "gallery",
+                    label: "Bouton",
+                    name: "landingBouton",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Texte", name: "landingBoutonTexte", widget: "string" },
+                        { label: "Lien", name: "landingBoutonLien", widget: "string" },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Services",
+              name: "services",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Service",
+                    name: "service",
                     widget: "list",
                     fields:
                       [
-                        { label: "Name", name: "name", widget: "string" },
-                        { label: "Image", name: "image", widget: "image" },
-                        { label: "Image Description", name: "imageAlt", widget: "string" },
+                        { label: "Titre", name: "serviceTitre", widget: "string" },
+                        { label: "Titre", name: "serviceTitre", widget: "text" },
+                        { label: "Image", name: "serviceImage", widget: "image" },
+                        {
+                          label: "Tags",
+                          name: "serviceTags",
+                          widget: "list",
+                          fields:
+                            [
+                              { label: "Tag", name: "serviceTagsTag", widget: "string" },
+                            ],
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Contact",
+              name: "contact",
+              widget: "object",
+              fields:
+                [
+                  { label: "Titre", name: "contactTitre", widget: "text" },
+                  { label: "Sous-Titre", name: "contactSousTitre", widget: "image" },
+                  {
+                    label: "Bouton",
+                    name: "contactBouton",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Texte", name: "contactBoutonTexte", widget: "string" },
+                        { label: "Lien", name: "contactBoutonLien", widget: "string" },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "A Propos",
+              name: "aPropos",
+              widget: "object",
+              fields:
+                [
+                  { label: "Titre", name: "aProposTitre", widget: "text" },
+                  { label: "Contenu", name: "aProposContenu", widget: "markdown" },
+                  { label: "Image", name: "aProposImage", widget: "image" },
+                  {
+                    label: "Equipe",
+                    name: "aProposEquipe",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Nom & Prénom", name: "aProposEquipeNom", widget: "string" },
+                        { label: "Poste", name: "aProposEquipePoste", widget: "string" },
+                        { label: "Email", name: "aProposEquipeEmail", widget: "string" },
+                        { label: "Téléphone", name: "aProposEquipeTelephone", widget: "string" },
+                        { label: "Photo", name: "aProposEquipePhoto", widget: "image" },
                       ],
                   },
                 ],
@@ -75,6 +125,7 @@ collections:
     fields:
       - { label: "Url", name: "url", widget: "string" }
       - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Sous-Titre", name: "sousTitre", widget: "text" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Contenu", name: "contenu", widget: "markdown" }
 
