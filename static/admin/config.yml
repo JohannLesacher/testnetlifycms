@@ -6,17 +6,8 @@ media_folder: static/img
 public_folder: img
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Url }
-      - { name: date, label: Date, widget: date, format: DD/MM/YYYY, dateFormat: true }
-      - { name: title, label: Titre }
-      - { name: body, label: Texte, widget: markdown }
-  - name: pages
-    label: Pages
+  - name: pages_speciales
+    label: Pages Spéciales
     files:
       - label: Accueil
         name: accueil
@@ -76,3 +67,14 @@ collections:
                   { label: "Description", name: "description", widget: "string" },
                 ],
             }
+
+  - name: pages_simples
+    label: Pages Simples
+    folder: src/pages/simples
+    create: true
+    fields:
+      - { label: "Url", name: "url", widget: "string" }
+      - { label: "Titre", name: "titre", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Contenu", name: "contenu", widget: "markdown" }
+
