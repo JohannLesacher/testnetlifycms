@@ -20,7 +20,7 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "Titre", name: "landingTitre", widget: "text" },
+                  { label: "Titre", name: "landingTitre", widget: "markdown" },
                   { label: "Image", name: "landingImage", widget: "image" },
                   {
                     label: "Bouton",
@@ -47,7 +47,7 @@ collections:
                     fields:
                       [
                         { label: "Titre", name: "serviceTitre", widget: "string" },
-                        { label: "Titre", name: "serviceTitre", widget: "text" },
+                        { label: "Texte", name: "serviceTexte", widget: "text" },
                         { label: "Image", name: "serviceImage", widget: "image" },
                         {
                           label: "Tags",
