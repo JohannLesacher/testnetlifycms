@@ -29,7 +29,6 @@ collections:
                     fields:
                       [
                         { label: "Texte", name: "landingBoutonTexte", widget: "string" },
-                        { label: "Lien", name: "landingBoutonLien", widget: "string" },
                       ],
                   },
                 ],
@@ -40,20 +39,21 @@ collections:
               widget: "object",
               fields:
                 [
+                  { label: "Sur-Titre", name: "serviceSurTitre", widget: "string" },
+                  { label: "Titre", name: "serviceTitre", widget: "string" },
                   {
                     label: "Service",
-                    name: "service",
+                    name: "serviceBlock",
                     widget: "list",
                     fields:
                       [
-                        { label: "Titre", name: "serviceTitre", widget: "string" },
-                        { label: "Texte", name: "serviceTexte", widget: "text" },
-                        { label: "Image", name: "serviceImage", widget: "image" },
+                        { label: "Titre", name: "serviceBlockTitre", widget: "string" },
+                        { label: "Texte", name: "serviceBlockTexte", widget: "markdown" },
+                        { label: "Image", name: "serviceBlockImage", widget: "image" },
                         {
                           label: "Tags",
-                          name: "serviceTags",
+                          name: "serviceBlockTags",
                           widget: "list",
-                          field: { label: "Tag", name: "serviceTagsTag", widget: "string" },
                         },
                       ],
                   },
@@ -65,8 +65,8 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "Titre", name: "contactTitre", widget: "text" },
-                  { label: "Sous-Titre", name: "contactSousTitre", widget: "image" },
+                  { label: "Titre", name: "contactTitre", widget: "string" },
+                  { label: "Sous-Titre", name: "contactSousTitre", widget: "string" },
                   {
                     label: "Bouton",
                     name: "contactBouton",
@@ -85,11 +85,11 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "Titre", name: "aProposTitre", widget: "text" },
+                  { label: "Titre", name: "aProposTitre", widget: "string" },
                   { label: "Contenu", name: "aProposContenu", widget: "markdown" },
                   { label: "Image", name: "aProposImage", widget: "image" },
                   {
-                    label: "Equipe",
+                    label: "Membres Equipe",
                     name: "aProposEquipe",
                     widget: "list",
                     fields:
